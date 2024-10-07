@@ -63,6 +63,6 @@ systemd-udev-252-14.el9_2.8.x86_64
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **References**
-https://access.redhat.com/solutions/6962273 - How do I map a RHEL CVE fix to RHCOS and RHOCP?
-https://access.redhat.com/solutions/5787001 - Obtaining package list for RHEL CoreOS or specific image
-https://access.redhat.com/articles/6907891 - RHEL Versions Utilized by RHEL CoreOS and OCP
+* https://access.redhat.com/solutions/6962273 - How do I map a RHEL CVE fix to RHCOS and RHOCP?
+* https://access.redhat.com/solutions/5787001 - Obtaining package list for RHEL CoreOS or specific image
+* https://access.redhat.com/articles/6907891 - RHEL Versions Utilized by RHEL CoreOS and OCP
