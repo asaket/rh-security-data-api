@@ -13,4 +13,4 @@ else
 	exit 0
 fi
 echo $CVE
-curl -s https://access.redhat.com/hydra/rest/securitydata/cve/$CVE | jq -rc '(try .package_state[] | [ .product_name, .package_name, .impact, .fix_state, "-" ]), (try .affected_release[] | [ .product_name, "Fixed", .advisory ])'
+curl -s https://access.redhat.com/hydra/rest/securitydata/cve/$CVE | jq -rc '(try .package_state[] | [ .product_name, .package_name, .impact, .fix_state, "-" ]), (try .affected_release[] | [ .product_name, "Fixed", .advisory ])' | uniq
