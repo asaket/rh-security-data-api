@@ -25,7 +25,10 @@ kernel-5.14.0-284.82.1.el9_2.x86_64
 $ ./get-package-version.sh 4.15.30 systemd
 systemd-252-14.el9_2.8.x86_64
 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 OR FOLLOW BELOW STEPS
+
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 1. Check the image name
 $ oc adm release info 4.15.30 | grep machine-os-content
@@ -57,6 +60,7 @@ systemd-pam-252-14.el9_2.8.x86_64
 systemd-rpm-macros-252-14.el9_2.8.noarch
 systemd-udev-252-14.el9_2.8.x86_64
 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **References**
 https://access.redhat.com/solutions/6962273 - How do I map a RHEL CVE fix to RHCOS and RHOCP?
