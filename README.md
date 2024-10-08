@@ -8,6 +8,13 @@ Shell script to extract jason data for a CVE
 4. Execute the script (./<script> <CVE_ID>)
 
 **Mapping RHEL CVE fix to RHCOS and RHOCP**
+Checking packages in an OpenShift release (ex, OCP 4.15.30)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Visit the link https://amd64.ocp.releases.ci.openshift.org/
+Click on the the RHEL CoreOS version upgraded to under Components
+Click on "OS contents" to check the packages and their versions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+OR use terminal to execute get-package-version script
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 ##################
@@ -27,8 +34,7 @@ systemd-252-14.el9_2.8.x86_64
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-OR FOLLOW BELOW STEPS
-
+Checking packages inside an Image
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 1. Check the image name
 $ oc adm release info 4.15.30 | grep machine-os-content

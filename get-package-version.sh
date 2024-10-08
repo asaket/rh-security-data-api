@@ -1,4 +1,23 @@
 #!/bin/bash
+#set -x
+
+if [ $# -lt 2 ]
+then
+  echo "Usage: $0 <OpenShift-Version> <package-name>"
+  echo "Example: $0 4.15.30 openssl"
+  exit 0
+fi
+
+if ! [ -f ./ocp-pull-secret.json ]
+then
+  echo "Ensure to store the pull secret in `pwd`/ocp-pull-secret.json"
+  exit 0
+fi
+
+if [ -z "$REGISTRY_AUTH_FILE" ]
+then
+  export REGISTRY_AUTH_FILE=`pwd`/ocp-pull-secret.json
+fi
 
 set -euo pipefail
 
